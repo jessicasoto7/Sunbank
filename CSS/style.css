@@ -1,0 +1,256 @@
+* {
+    /*font-family: 'Merriweather', serif;  
+    /*font-family: 'Vollkorn', serif;*/
+    font-weight:100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar .container-fluid {
+    margin: 0px 25px;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', serif;
+    font-weight:100;
+}
+
+.navbar-dark .navbar-brand {
+    color:white;
+}
+
+.navbar-brand .container-fluid {
+    margin-left: 200px;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.dropdown-item {
+    text-transform: uppercase;
+    color: white;
+    font-stretch: condensed;
+}
+
+.nav-link:hover, .dropdown-item:hover {
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color:white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color:white;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.dropdown-menu {
+    border:none;
+}
+
+.navbar-toggler {
+    border:none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    right: 15px;
+}
+
+.dropdown-menu {
+    background-color: #fff0;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    background-color: #b88e0259;
+}
+
+/*shopping cart*/
+
+.btn-link .bi-bag {
+    color:white;
+    font-size: 20px;
+    padding-left: 75px;
+}
+
+/*carousel*/
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin-left: 15px;
+}
+
+/*logo*/
+
+.logo {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Slogan*/
+
+.slogan {
+    background-color: #E1AD01;
+}
+
+.slogan .subtitle {
+    font-family: 'Vollkorn', serif;
+    color:white;
+    margin:100px 0px;
+}
+
+/*woman*/
+
+.woman h1{
+    font-family: 'Vollkorn', serif;
+    margin: 75px 0px 10px 0px;
+}
+
+.btn {
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.shopping {
+    margin-top: 25px;;
+}
+
+/*Modal Web Form*/
+
+input[type=text],
+textarea[type=text] {
+    outline: 0;
+    border-width: 0 0 2px;     
+    border-color: white;
+}
+
+input[type=text]:focus,
+textarea[type=text]:focus {
+    border-color: gray;
+}
+
+.modal-content {
+    border: 0px;
+    border-radius: 0px;
+    background-color: #76601d;
+    color: white;
+}
+
+.form-control {
+    background-color:#fff0;
+    border-radius: 0px;
+}
+
+#contact-form .row {
+    margin-bottom: 15px;
+}
+
+.send-form {
+    background-color: #0d6efd00;
+    border-color: #ffffff;
+}
+
+.send-form:hover {
+    color: #76601d;
+    background-color: #ffffff;
+    border-color: white;
+}
+
+/*footer*/
+
+footer {
+    background-color:#E1AD01;
+    color:white;
+    min-height: 50px;
+    margin-top: 50px;
+}
+
+footer .container .row h5 {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 992px){
+    .navbar-brand {
+        text-align: center;
+    }
+    .nav-item {
+        text-align: left;
+    }
+
+    .dropdown-menu li {
+        text-align: left;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .carousel-inner img {
+        width:150%;
+    }
+
+    .btn-link .bi-bag {
+        padding-left:0px;
+    }
+
+    .navbar {
+        margin: 0px;
+        background-color: #e1ad01;
+        transition: ease all .5s;
+    }
+
+}
+
+@media only screen and (max-width: 572px){
+    header {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    header {
+        height: 420px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    header {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    header {
+        height: 310px;
+    }
+}
